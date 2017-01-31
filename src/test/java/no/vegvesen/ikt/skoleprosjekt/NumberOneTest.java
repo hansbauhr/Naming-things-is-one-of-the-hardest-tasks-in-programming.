@@ -2,6 +2,9 @@ package no.vegvesen.ikt.skoleprosjekt;
 
 import static org.junit.Assert.*;
 
+import java.util.Arrays;
+import java.util.List;
+
 //import java.math.BigDecimal;
 
 import org.junit.Test;
@@ -80,6 +83,32 @@ public class NumberOneTest {
 		
 		int fib1 = new MyFibonacci().fib(5);
 		assertEquals(5, fib1);
+	}
+	
+	
+	
+	@Test
+	public void fiboList() throws Exception {
+		
+//		List svar1 = Arrays.asList(0,1,1,2);
+//		List svar2 = Arrays.asList(0,1,1,2,3,5,8,13,21,34);
+//		List svar3 = Arrays.asList(0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584,4181,6765);
+		
+		
+		List<Integer> fibo1 = new MyFibonacci().lagFibonacciListMed(3);
+		List<Integer> fibo2 = new MyFibonacci().lagFibonacciListMed(9);
+		List<Integer> fibo3 = new MyFibonacci().lagFibonacciListMed(20);
+		
+		assertEquals(fibo1.size(), 4);
+		assertEquals(fibo1.get(0), Integer.valueOf(0));
+		assertEquals(fibo1.get(1), Integer.valueOf(1));
+		assertEquals(fibo1.get(2), Integer.valueOf(1));
+		assertEquals(fibo1.get(3), Integer.valueOf(2));
+		
+		assertEquals(fibo2.size(), 10);
+		assertEquals(fibo3.size(), 21);
+		
+		
 	}
 	
 

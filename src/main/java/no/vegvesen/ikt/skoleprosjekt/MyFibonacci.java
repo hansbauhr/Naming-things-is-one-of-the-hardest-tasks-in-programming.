@@ -1,5 +1,9 @@
 package no.vegvesen.ikt.skoleprosjekt;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class MyFibonacci {
 
 	public String lagFibonacciStrengMed(int input) {
@@ -27,6 +31,27 @@ public class MyFibonacci {
 
 		return fib(n - 1) + fib(n - 2);
 
+	}
+	
+	
+	public List<Integer> lagFibonacciListMed(int input) {
+		
+		List<Integer> answer = new ArrayList();
+		
+		answer.add(0);
+		
+		
+		for (int i = 1; i <= input; i++) {
+			
+			
+		
+		answer.add(fib(i));
+		}
+		
+		//System.out.println(answer);
+	
+		return answer;
+		
 	}
 
 }
