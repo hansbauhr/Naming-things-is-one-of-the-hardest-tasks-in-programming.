@@ -2,6 +2,7 @@ package no.vegvesen.ikt.skoleprosjekt;
 
 import static org.junit.Assert.*;
 
+import java.math.BigDecimal;
 
 import org.junit.Test;
 
@@ -31,7 +32,29 @@ public class NumberOneTest {
 		assertEquals(1.414, noe2, 0.01);
 		
 		double noe3 = TheRoot.finnRoten(9);
+		//System.out.println(noe3);
 		assertEquals(3, noe3, 0);
+		
+	}
+	
+	@Test
+	public void skal_finne_de_20_føreste_desimaler_på_pi() throws Exception {
+		//fail("Not yet implemented!");
+		BigDecimal pi = ThePi.finnPi();
+		
+		//double expected = 3.14159265358979323846;
+		BigDecimal expected = BigDecimal.valueOf(3.14159265358979323846);
+		
+		System.out.println(pi + " = pi calc");
+		System.out.println(expected + " = pi expected");
+		
+		
+		String pi_streng = ThePi.PiStreng();
+		assertEquals("3.14159265358979323846", pi_streng);
+		
+		
+		
+		
 	}
 	
 

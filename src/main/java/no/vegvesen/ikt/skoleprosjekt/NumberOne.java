@@ -15,7 +15,6 @@ public class NumberOne {
 	}
 
 	public static int leggSammenDisseTallene(int i, int j) {
-		// TODO Auto-generated method stub
 		return i + j;
 		
 	}
