@@ -1,6 +1,6 @@
 package no.vegvesen.ikt.skoleprosjekt;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-public class NumberOneTest {
+public class TheBigTest {
 
 	@Test
 	public void test() {
@@ -19,7 +19,7 @@ public class NumberOneTest {
 	}
 	
 	@Test
-	public void skal_bare() throws Exception {
+	public void skal_bare() {
 		int sum = NumberOne.leggSammenDisseTallene(2,2);
 		assertEquals(4, sum);
 	}
@@ -40,7 +40,7 @@ public class NumberOneTest {
 	}
 	
 	@Test
-	public void skal_finne_de_20_føreste_desimaler_på_pi() throws Exception {
+	public void skal_finne_de_20_føreste_desimaler_på_pi() {
 		//fail("Not yet implemented!");
 		//BigDecimal pi = ThePi.finnPi();
 		
@@ -60,7 +60,7 @@ public class NumberOneTest {
 	}
 	
 	@Test
-	public void skal_regne_ut_fibonacci() throws Exception {
+	public void skal_regne_ut_fibonacci() {
 		String svar1 = "0,1,1,2";
 		String svar2 = "0,1,1,2,3,5,8,13,21,34";
 		String svar3 = "0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584,4181,6765";
@@ -87,7 +87,7 @@ public class NumberOneTest {
 	
 	
 	@Test
-	public void fiboList() throws Exception {
+	public void fiboList() {
 		
 //		List svar1 = Arrays.asList(0,1,1,2);
 //		List svar2 = Arrays.asList(0,1,1,2,3,5,8,13,21,34);
@@ -106,6 +106,21 @@ public class NumberOneTest {
 		
 		assertEquals(fibo2.size(), 10);
 		assertEquals(fibo3.size(), 21);
+		
+		
+	}
+	
+	
+	@Test
+	public void primTall() {
+
+		Boolean svar1 = MyPrimeNumbers.isPrime(3);
+		Boolean svar2 = MyPrimeNumbers.isPrime(2);
+		Boolean svar3 = MyPrimeNumbers.isPrime(16);
+				
+		assertEquals(true, svar1);
+		assertEquals(true, svar2);
+		assertEquals(false, svar3);
 		
 		
 	}
