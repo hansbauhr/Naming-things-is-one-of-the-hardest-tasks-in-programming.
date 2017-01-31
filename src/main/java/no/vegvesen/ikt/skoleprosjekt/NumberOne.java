@@ -2,13 +2,21 @@ package no.vegvesen.ikt.skoleprosjekt;
 
 public class NumberOne {
 	
-	public static void HalloVerden() {
-		System.out.println("Hallo verden!");
+	public static String HalloVerden() {
+		return "Hallo verden!";
+		
+		
 	}
 	
 	public static void main(String[] args){
 		
-		HalloVerden();
+		System.out.println(HalloVerden());
+		
+	}
+
+	public static int leggSammenDisseTallene(int i, int j) {
+		// TODO Auto-generated method stub
+		return i + j;
 		
 	}
 
