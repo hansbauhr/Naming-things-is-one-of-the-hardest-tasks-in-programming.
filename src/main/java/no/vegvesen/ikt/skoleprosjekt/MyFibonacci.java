@@ -1,7 +1,6 @@
 package no.vegvesen.ikt.skoleprosjekt;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class MyFibonacci {
@@ -36,7 +35,7 @@ public class MyFibonacci {
 	
 	public List<Integer> lagFibonacciListMed(int input) {
 		
-		List<Integer> answer = new ArrayList();
+		List<Integer> answer = new ArrayList<>();
 		
 		answer.add(0);
 		

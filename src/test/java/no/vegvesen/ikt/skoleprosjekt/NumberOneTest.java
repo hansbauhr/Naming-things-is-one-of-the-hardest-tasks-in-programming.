@@ -1,8 +1,7 @@
 package no.vegvesen.ikt.skoleprosjekt;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
-import java.util.Arrays;
 import java.util.List;
 
 //import java.math.BigDecimal;
