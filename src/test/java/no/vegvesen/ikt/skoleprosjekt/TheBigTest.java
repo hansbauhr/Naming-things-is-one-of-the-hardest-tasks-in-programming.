@@ -215,8 +215,8 @@ public class TheBigTest {
 		
 		
 		
-		System.out.println(oldLines.get(0));
-		System.out.println(fizzbuzzser.get(0));
+//		System.out.println(oldLines.get(0));
+//		System.out.println(fizzbuzzser.get(0));
 		
 		
 		
