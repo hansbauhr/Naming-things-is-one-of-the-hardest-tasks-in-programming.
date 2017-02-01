@@ -14,7 +14,7 @@ public class TheBigTest {
 	public void test() {
 		
 		String tekst = NumberOne.HalloVerden();
-		assertEquals("Hallo verden!", tekst);
+		assertEquals("Hallo Verdwen!", tekst);
 		
 	}
 	
@@ -122,6 +122,19 @@ public class TheBigTest {
 		assertEquals(true, svar2);
 		assertEquals(false, svar3);
 		
+		
+	}
+	
+	@Test
+	public void primeList() {
+		
+		String svar1 = "2,3";
+		String svar2 = "2,3,5,7";
+		String svar3 = "2,3,5,7,11,13";
+		
+		assertEquals(svar1, MyPrimeNumbers.primeList(3));
+		assertEquals(svar2, MyPrimeNumbers.primeList(10));
+		assertEquals(svar2, MyPrimeNumbers.primeList(10));
 		
 	}
 	

@@ -25,5 +25,25 @@ public class MyPrimeNumbers {
 		
 		return true;
 	}
+	
+	
+	public static String primeList(int input) {
+		
+		String answer = "2";
+		
+		for (int i = 3; i <= input; i++) {
+			
+			if (isPrime(i)){
+				
+				answer += "," + i;
+						
+			}
+			
+		}
+		
+		
+		return answer;
+				
+	}
 
 }

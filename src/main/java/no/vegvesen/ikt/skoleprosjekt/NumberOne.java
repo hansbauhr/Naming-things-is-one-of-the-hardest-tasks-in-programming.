@@ -3,7 +3,7 @@ package no.vegvesen.ikt.skoleprosjekt;
 public class NumberOne {
 	
 	public static String HalloVerden() {
-		return "Hallo verden!";
+		return "Hallo Verdwen!";
 		
 		
 	}
@@ -18,5 +18,8 @@ public class NumberOne {
 		return i + j;
 		
 	}
+	
+	
+	
 
 }

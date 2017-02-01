@@ -2,6 +2,7 @@
 .project
 *.class
 .classpath
+cp.txt
 
 
 # Mobile Tools for Java (J2ME)
