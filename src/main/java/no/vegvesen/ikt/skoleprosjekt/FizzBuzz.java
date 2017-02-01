@@ -52,6 +52,7 @@ public class FizzBuzz {
 		// Why use a loop to calculate the amount of fizzbuzzes in a list of n size when you can floorDiv(n, 15)?
 		return Math.floorDiv(fizzbuzzser.size(), 15);
 		
+		
 	}
 
 }
