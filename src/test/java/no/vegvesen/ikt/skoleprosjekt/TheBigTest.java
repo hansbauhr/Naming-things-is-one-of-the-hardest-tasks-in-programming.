@@ -2,6 +2,10 @@ package no.vegvesen.ikt.skoleprosjekt;
 
 import static org.junit.Assert.*;
 
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.List;
 
 //import java.math.BigDecimal;
@@ -178,6 +182,54 @@ public class TheBigTest {
 		
 		
 	
+	}
+	
+	@Test
+	public void skal_spille_fizz_buzz() throws IOException {
+		// les inn fizzbuzz.txt fra fil (src/test/resoures
+		// Legg verdiene i en liste med strenger
+		
+		List<String> fizzbuzzser = FizzBuzz.fizzBuzz(100);
+		
+		List<String> oldLines = Files.readAllLines(Paths.get("src/test/resources/fizzbuzz.txt"), StandardCharsets.UTF_8);
+		
+		
+//		String file_fizzbuzz = "";
+//		
+//		for (String line : oldLines) {
+//			
+//			file_fizzbuzz += line;
+//			System.out.println(line);
+//			
+//		}
+		
+		
+		//String newLines = (oldLines.toString()).replaceAll("[|]", "");
+		
+//		newlines = oldLines.toString()
+		
+
+		
+		//System.out.println(newLines);
+		
+		
+		
+		
+		System.out.println(oldLines.get(0));
+		System.out.println(fizzbuzzser.get(0));
+		
+		
+		
+		
+		
+		assertEquals(fizzbuzzser.toString(), oldLines.toString());
+		assertEquals(fizzbuzzser.get(15), oldLines.get(15));
+		assertTrue(fizzbuzzser.equals(oldLines));
+		assertEquals(fizzbuzzser, oldLines);
+		
+		
+		
+		
 	}
 	
 
