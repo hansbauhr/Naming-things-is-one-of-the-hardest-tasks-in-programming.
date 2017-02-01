@@ -134,7 +134,7 @@ public class TheBigTest {
 		
 		assertEquals(svar1, MyPrimeNumbers.primeList(3));
 		assertEquals(svar2, MyPrimeNumbers.primeList(10));
-		assertEquals(svar2, MyPrimeNumbers.primeList(10));
+		assertEquals(svar3, MyPrimeNumbers.primeList(15));
 		
 	}
 	

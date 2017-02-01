@@ -10,7 +10,23 @@ public class NumberOne {
 	
 	public static void main(String[] args){
 		
+		for (String arg : args) {
+			System.out.println(arg);
+		}
+		
 		System.out.println(HalloVerden());
+		
+		
+		try {
+			
+			System.out.println(args[0]);
+			
+		} catch (ArrayIndexOutOfBoundsException e) {
+			
+			System.out.println("Det er ingen args å printe! " + e.getCause());
+		}
+		
+		
 		
 	}
 
