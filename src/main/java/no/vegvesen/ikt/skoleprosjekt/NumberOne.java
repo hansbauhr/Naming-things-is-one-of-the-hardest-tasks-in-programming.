@@ -17,17 +17,32 @@ public class NumberOne {
 		System.out.println(HalloVerden());
 		
 		
+		
+		
+		
+		
+		
 		try {
 			
-			if (MyPrimeNumbers.isPrime(new Integer(args[0]))) {
-				
-				print(args[0] + " is prime!");
-				
-			}
-			else {
-				print(args[0] + " is not prime!");
-				
-			}
+			
+			String isFib = (FiboPrime.isFibo(args[0]) ? "Fibonacci" : "");
+			String isPrime = (MyPrimeNumbers.isPrime(args[0]) ? "Prime" : "");
+			
+			
+			print(isFib + isPrime);
+			
+			
+			
+			
+//			if (MyPrimeNumbers.isPrime(new Integer(args[0]))) {
+//				
+//				print(args[0] + " is prime!");
+//				
+//			}
+//			else {
+//				print(args[0] + " is not prime!");
+//				
+//			}
 
 			
 			
@@ -41,7 +56,7 @@ public class NumberOne {
 		
 	}
 
-	private static void print(String string) {
+	public static void print(String string) {
 		System.out.println(string);
 		
 	}
@@ -50,6 +65,8 @@ public class NumberOne {
 		return i + j;
 		
 	}
+
+	
 	
 	
 	

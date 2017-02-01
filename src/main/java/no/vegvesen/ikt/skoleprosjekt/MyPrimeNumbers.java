@@ -46,4 +46,9 @@ public class MyPrimeNumbers {
 				
 	}
 
+
+	public static boolean isPrime(String string) {
+		return isPrime(new Integer(string));
+	}
+
 }

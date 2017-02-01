@@ -114,7 +114,7 @@ public class TheBigTest {
 	@Test
 	public void primTall() {
 
-		Boolean svar1 = MyPrimeNumbers.isPrime(3);
+		Boolean svar1 = MyPrimeNumbers.isPrime(47);
 		Boolean svar2 = MyPrimeNumbers.isPrime(2);
 		Boolean svar3 = MyPrimeNumbers.isPrime(16);
 		Boolean svar4 = MyPrimeNumbers.isPrime(20);
@@ -139,6 +139,22 @@ public class TheBigTest {
 	
 	}
 	
+	
+	@Test
+	public void isFiboTest() {
+		
+		assertEquals(FiboPrime.isFibo(5), true);
+		assertEquals(FiboPrime.isFibo(100), false);
+		assertEquals(FiboPrime.isFibo(2), true);
+		assertEquals(FiboPrime.isFibo(1), true);
+		assertEquals(FiboPrime.isFibo(54), false);
+		assertEquals(FiboPrime.isFibo(47), false);
+
+		
+		
+		
+	}
+	
 	@Test
 	public void skal_sjekke__fibo_prime() {
 		
@@ -154,16 +170,14 @@ public class TheBigTest {
 		
 		assertEquals(svar1, true);
 		assertEquals(svar2, true);
-		assertEquals(svar3, true);
+		assertEquals(svar3, false);
 		assertEquals(svar4, false);
 		assertEquals(svar5, false);
 		assertEquals(svar6, true);
 		assertEquals(svar7, true);
 		
 		
-		
-		
-
+	
 	}
 	
 
