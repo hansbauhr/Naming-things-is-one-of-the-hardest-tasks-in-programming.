@@ -4,6 +4,8 @@ public class FiboPrime {
 
 	public static Boolean isFiboPrime(int i) {
 		
+		
+		
 		if (MyPrimeNumbers.isPrime(i) && isFibo(i)) {
 			
 			return true;

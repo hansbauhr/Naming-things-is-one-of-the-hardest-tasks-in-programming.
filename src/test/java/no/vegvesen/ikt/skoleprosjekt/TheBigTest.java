@@ -147,6 +147,8 @@ public class TheBigTest {
 		Boolean svar3 = FiboPrime.isFiboPrime(47);
 		Boolean svar4 = FiboPrime.isFiboPrime(99);
 		Boolean svar5 = FiboPrime.isFiboPrime(144);
+		Boolean svar6 = FiboPrime.isFiboPrime(28657);
+		Boolean svar7 = FiboPrime.isFiboPrime(514229);
 		
 		
 		
@@ -155,6 +157,8 @@ public class TheBigTest {
 		assertEquals(svar3, true);
 		assertEquals(svar4, false);
 		assertEquals(svar5, false);
+		assertEquals(svar6, true);
+		assertEquals(svar7, true);
 		
 		
 		
