@@ -232,5 +232,14 @@ public class TheBigTest {
 		
 	}
 	
+	@Test
+	public void skal_finne_antall_fizzbuzz_for_1_til_1000() throws Exception {
+		assertEquals(FizzBuzz.hentUtAntallFizzBuzzer(FizzBuzz.fizzBuzz(1000)).intValue(), Integer.valueOf(66).intValue());
+		assertEquals(FizzBuzz.hentUtAntallFizzBuzzer(FizzBuzz.fizzBuzz(14)).intValue(), Integer.valueOf(0).intValue());
+		assertEquals(FizzBuzz.hentUtAntallFizzBuzzer(FizzBuzz.fizzBuzz(15)).intValue(), Integer.valueOf(1).intValue());
+		assertEquals(FizzBuzz.hentUtAntallFizzBuzzer(FizzBuzz.fizzBuzz(150)).intValue(), Integer.valueOf(10).intValue());
+		assertEquals(FizzBuzz.hentUtAntallFizzBuzzer(FizzBuzz.fizzBuzz(1400)).intValue(), Integer.valueOf(93).intValue());
+	}
+	
 
 }
