@@ -117,11 +117,12 @@ public class TheBigTest {
 		Boolean svar1 = MyPrimeNumbers.isPrime(3);
 		Boolean svar2 = MyPrimeNumbers.isPrime(2);
 		Boolean svar3 = MyPrimeNumbers.isPrime(16);
+		Boolean svar4 = MyPrimeNumbers.isPrime(20);
 				
 		assertEquals(true, svar1);
 		assertEquals(true, svar2);
 		assertEquals(false, svar3);
-		
+		assertEquals(false, svar4);
 		
 	}
 	
@@ -135,7 +136,30 @@ public class TheBigTest {
 		assertEquals(svar1, MyPrimeNumbers.primeList(3));
 		assertEquals(svar2, MyPrimeNumbers.primeList(10));
 		assertEquals(svar3, MyPrimeNumbers.primeList(15));
+	
+	}
+	
+	@Test
+	public void skal_sjekke__fibo_prime() {
 		
+		Boolean svar1 = FiboPrime.isFiboPrime(2);
+		Boolean svar2 = FiboPrime.isFiboPrime(89);
+		Boolean svar3 = FiboPrime.isFiboPrime(47);
+		Boolean svar4 = FiboPrime.isFiboPrime(99);
+		Boolean svar5 = FiboPrime.isFiboPrime(144);
+		
+		
+		
+		assertEquals(svar1, true);
+		assertEquals(svar2, true);
+		assertEquals(svar3, true);
+		assertEquals(svar4, false);
+		assertEquals(svar5, false);
+		
+		
+		
+		
+
 	}
 	
 

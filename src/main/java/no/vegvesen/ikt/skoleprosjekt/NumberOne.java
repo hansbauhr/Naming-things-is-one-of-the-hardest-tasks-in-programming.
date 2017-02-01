@@ -10,16 +10,27 @@ public class NumberOne {
 	
 	public static void main(String[] args){
 		
-		for (String arg : args) {
-			System.out.println(arg);
-		}
+		//for (String arg : args) {
+		//	System.out.println(arg);
+		//}
 		
 		System.out.println(HalloVerden());
 		
 		
 		try {
 			
-			System.out.println(args[0]);
+			if (MyPrimeNumbers.isPrime(new Integer(args[0]))) {
+				
+				print(args[0] + " is prime!");
+				
+			}
+			else {
+				print(args[0] + " is not prime!");
+				
+			}
+
+			
+			
 			
 		} catch (ArrayIndexOutOfBoundsException e) {
 			
@@ -27,6 +38,11 @@ public class NumberOne {
 		}
 		
 		
+		
+	}
+
+	private static void print(String string) {
+		System.out.println(string);
 		
 	}
 
